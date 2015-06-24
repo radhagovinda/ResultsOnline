@@ -1,0 +1,266 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel school add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN SchoolName_fieldblock}
+<tr class="{$fielddispclass_SchoolName}" data-fieldname="SchoolName">
+	<td class="rnr-label">
+		{BEGIN SchoolName_label}{$label school SchoolName}{END SchoolName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SchoolName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SchoolName_fieldblock}
+	{BEGIN AddressLine1_fieldblock}
+<tr class="{$fielddispclass_AddressLine1}" data-fieldname="AddressLine1">
+	<td class="rnr-label">
+		{BEGIN AddressLine1_label}{$label school AddressLine1}{END AddressLine1_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AddressLine1_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AddressLine1_fieldblock}
+	{BEGIN AddressLine2_fieldblock}
+<tr class="{$fielddispclass_AddressLine2}" data-fieldname="AddressLine2">
+	<td class="rnr-label">
+		{BEGIN AddressLine2_label}{$label school AddressLine2}{END AddressLine2_label}
+	</td>
+	<td class="rnr-control style3">
+		{$AddressLine2_editcontrol}&nbsp;
+	</td>
+</tr>
+{END AddressLine2_fieldblock}
+	{BEGIN City_fieldblock}
+<tr class="{$fielddispclass_City}" data-fieldname="City">
+	<td class="rnr-label">
+		{BEGIN City_label}{$label school City}{END City_label}
+	</td>
+	<td class="rnr-control style3">
+		{$City_editcontrol}&nbsp;
+	</td>
+</tr>
+{END City_fieldblock}
+	{BEGIN PINCode_fieldblock}
+<tr class="{$fielddispclass_PINCode}" data-fieldname="PINCode">
+	<td class="rnr-label">
+		{BEGIN PINCode_label}{$label school PINCode}{END PINCode_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PINCode_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PINCode_fieldblock}
+	{BEGIN State_fieldblock}
+<tr class="{$fielddispclass_State}" data-fieldname="State">
+	<td class="rnr-label">
+		{BEGIN State_label}{$label school State}{END State_label}
+	</td>
+	<td class="rnr-control style3">
+		{$State_editcontrol}&nbsp;
+	</td>
+</tr>
+{END State_fieldblock}
+	{BEGIN Principal_fieldblock}
+<tr class="{$fielddispclass_Principal}" data-fieldname="Principal">
+	<td class="rnr-label">
+		{BEGIN Principal_label}{$label school Principal}{END Principal_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Principal_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Principal_fieldblock}
+	{BEGIN Board_fieldblock}
+<tr class="{$fielddispclass_Board}" data-fieldname="Board">
+	<td class="rnr-label">
+		{BEGIN Board_label}{$label school Board}{END Board_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Board_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Board_fieldblock}
+	{BEGIN PrincipalsMobileNumber_fieldblock}
+<tr class="{$fielddispclass_PrincipalsMobileNumber}" data-fieldname="PrincipalsMobileNumber">
+	<td class="rnr-label">
+		{BEGIN PrincipalsMobileNumber_label}{$label school PrincipalsMobileNumber}{END PrincipalsMobileNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PrincipalsMobileNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PrincipalsMobileNumber_fieldblock}
+	{BEGIN PrincipalsMobileNumber2_fieldblock}
+<tr class="{$fielddispclass_PrincipalsMobileNumber2}" data-fieldname="PrincipalsMobileNumber2">
+	<td class="rnr-label">
+		{BEGIN PrincipalsMobileNumber2_label}{$label school PrincipalsMobileNumber2}{END PrincipalsMobileNumber2_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PrincipalsMobileNumber2_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PrincipalsMobileNumber2_fieldblock}
+	{BEGIN PrincipalsPhoneNumber_fieldblock}
+<tr class="{$fielddispclass_PrincipalsPhoneNumber}" data-fieldname="PrincipalsPhoneNumber">
+	<td class="rnr-label">
+		{BEGIN PrincipalsPhoneNumber_label}{$label school PrincipalsPhoneNumber}{END PrincipalsPhoneNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PrincipalsPhoneNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PrincipalsPhoneNumber_fieldblock}
+	{BEGIN PrincipalsEmailID_fieldblock}
+<tr class="{$fielddispclass_PrincipalsEmailID}" data-fieldname="PrincipalsEmailID">
+	<td class="rnr-label">
+		{BEGIN PrincipalsEmailID_label}{$label school PrincipalsEmailID}{END PrincipalsEmailID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PrincipalsEmailID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PrincipalsEmailID_fieldblock}
+	{BEGIN SchoolPhone_fieldblock}
+<tr class="{$fielddispclass_SchoolPhone}" data-fieldname="SchoolPhone">
+	<td class="rnr-label">
+		{BEGIN SchoolPhone_label}{$label school SchoolPhone}{END SchoolPhone_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SchoolPhone_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SchoolPhone_fieldblock}
+	{BEGIN Website_fieldblock}
+<tr class="{$fielddispclass_Website}" data-fieldname="Website">
+	<td class="rnr-label">
+		{BEGIN Website_label}{$label school Website}{END Website_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Website_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Website_fieldblock}
+	{BEGIN SchoolEmail_fieldblock}
+<tr class="{$fielddispclass_SchoolEmail}" data-fieldname="SchoolEmail">
+	<td class="rnr-label">
+		{BEGIN SchoolEmail_label}{$label school SchoolEmail}{END SchoolEmail_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SchoolEmail_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SchoolEmail_fieldblock}
+	<tr >
+	<td colspan="2">	
+		{$Section Login_Credential1}&nbsp;	
+	</td>
+</tr>
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}
+<a href="#" class="rnr-button main" id="saveButton{$id}">Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+{END reset_button}
+{BEGIN cancel_button}
+<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+{END cancel_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+{END back_button}
+{BEGIN backToMenu_button}
+<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+{END backToMenu_button}</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>
