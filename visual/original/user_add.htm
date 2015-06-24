@@ -1,0 +1,191 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel user add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN UserFullName_fieldblock}
+<tr class="{$fielddispclass_UserFullName}" data-fieldname="UserFullName">
+	<td class="rnr-label">
+		{BEGIN UserFullName_label}{$label user UserFullName}{END UserFullName_label}
+	</td>
+	<td class="rnr-control style3">
+		{$UserFullName_editcontrol}&nbsp;
+	</td>
+</tr>
+{END UserFullName_fieldblock}
+	{BEGIN LoginID_fieldblock}
+<tr class="{$fielddispclass_LoginID}" data-fieldname="LoginID">
+	<td class="rnr-label">
+		{BEGIN LoginID_label}{$label user LoginID}{END LoginID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$LoginID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END LoginID_fieldblock}
+	{BEGIN Password_fieldblock}
+<tr class="{$fielddispclass_Password}" data-fieldname="Password">
+	<td class="rnr-label">
+		{BEGIN Password_label}{$label user Password}{END Password_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Password_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Password_fieldblock}
+	{BEGIN PasswordHintQuestion_fieldblock}
+<tr class="{$fielddispclass_PasswordHintQuestion}" data-fieldname="PasswordHintQuestion">
+	<td class="rnr-label">
+		{BEGIN PasswordHintQuestion_label}{$label user PasswordHintQuestion}{END PasswordHintQuestion_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PasswordHintQuestion_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PasswordHintQuestion_fieldblock}
+	{BEGIN PasswordHintAnswer_fieldblock}
+<tr class="{$fielddispclass_PasswordHintAnswer}" data-fieldname="PasswordHintAnswer">
+	<td class="rnr-label">
+		{BEGIN PasswordHintAnswer_label}{$label user PasswordHintAnswer}{END PasswordHintAnswer_label}
+	</td>
+	<td class="rnr-control style3">
+		{$PasswordHintAnswer_editcontrol}&nbsp;
+	</td>
+</tr>
+{END PasswordHintAnswer_fieldblock}
+	{BEGIN EmailID_fieldblock}
+<tr class="{$fielddispclass_EmailID}" data-fieldname="EmailID">
+	<td class="rnr-label">
+		{BEGIN EmailID_label}{$label user EmailID}{END EmailID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$EmailID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END EmailID_fieldblock}
+	{BEGIN MobileNumber_fieldblock}
+<tr class="{$fielddispclass_MobileNumber}" data-fieldname="MobileNumber">
+	<td class="rnr-label">
+		{BEGIN MobileNumber_label}{$label user MobileNumber}{END MobileNumber_label}
+	</td>
+	<td class="rnr-control style3">
+		{$MobileNumber_editcontrol}&nbsp;
+	</td>
+</tr>
+{END MobileNumber_fieldblock}
+	{BEGIN SchoolID_fieldblock}
+<tr class="{$fielddispclass_SchoolID}" data-fieldname="SchoolID">
+	<td class="rnr-label">
+		{BEGIN SchoolID_label}{$label user SchoolID}{END SchoolID_label}
+	</td>
+	<td class="rnr-control style3">
+		{$SchoolID_editcontrol}&nbsp;
+	</td>
+</tr>
+{END SchoolID_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}">{BEGIN save_button}
+<a href="#" class="rnr-button main" id="saveButton{$id}">Save</a>
+{END save_button}
+{BEGIN reset_button}
+<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+{END reset_button}
+{BEGIN cancel_button}
+<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+{END cancel_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+{END back_button}
+{BEGIN backToMenu_button}
+<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+{END backToMenu_button}</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

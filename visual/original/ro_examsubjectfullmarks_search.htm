@@ -1,0 +1,236 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_search}
+<div class="rnr-c rnr-cv rnr-c-search">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel ro_examsubjectfullmarks search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>NOT</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Examination}">
+	{BEGIN Examination_fieldblock}		
+	<td>
+		{$label ro_examsubjectfullmarks Examination}
+	</td>
+	<td>
+		<input type="checkbox" {$Examination_notbox}>
+	</td>
+	<td>
+		{$searchtype_Examination}
+	</td>
+	<td>
+		{$Examination_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Examination_editcontrol1}&nbsp;
+	</td>
+{END Examination_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Subject}">
+	{BEGIN Subject_fieldblock}		
+	<td>
+		{$label ro_examsubjectfullmarks Subject}
+	</td>
+	<td>
+		<input type="checkbox" {$Subject_notbox}>
+	</td>
+	<td>
+		{$searchtype_Subject}
+	</td>
+	<td>
+		{$Subject_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Subject_editcontrol1}&nbsp;
+	</td>
+{END Subject_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_FullMarks}">
+	{BEGIN FullMarks_fieldblock}		
+	<td>
+		{$label ro_examsubjectfullmarks FullMarks}
+	</td>
+	<td>
+		<input type="checkbox" {$FullMarks_notbox}>
+	</td>
+	<td>
+		{$searchtype_FullMarks}
+	</td>
+	<td>
+		{$FullMarks_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$FullMarks_editcontrol1}&nbsp;
+	</td>
+{END FullMarks_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Theoritical}">
+	{BEGIN Theoritical_fieldblock}		
+	<td>
+		{$label ro_examsubjectfullmarks Theoritical}
+	</td>
+	<td>
+		<input type="checkbox" {$Theoritical_notbox}>
+	</td>
+	<td>
+		{$searchtype_Theoritical}
+	</td>
+	<td>
+		{$Theoritical_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Theoritical_editcontrol1}&nbsp;
+	</td>
+{END Theoritical_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Practical}">
+	{BEGIN Practical_fieldblock}		
+	<td>
+		{$label ro_examsubjectfullmarks Practical}
+	</td>
+	<td>
+		<input type="checkbox" {$Practical_notbox}>
+	</td>
+	<td>
+		{$searchtype_Practical}
+	</td>
+	<td>
+		{$Practical_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Practical_editcontrol1}&nbsp;
+	</td>
+{END Practical_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Oral}">
+	{BEGIN Oral_fieldblock}		
+	<td>
+		{$label ro_examsubjectfullmarks Oral}
+	</td>
+	<td>
+		<input type="checkbox" {$Oral_notbox}>
+	</td>
+	<td>
+		{$searchtype_Oral}
+	</td>
+	<td>
+		{$Oral_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Oral_editcontrol1}&nbsp;
+	</td>
+{END Oral_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_SchoolID}">
+	{BEGIN SchoolID_fieldblock}		
+	<td>
+		{$label ro_examsubjectfullmarks SchoolID}
+	</td>
+	<td>
+		<input type="checkbox" {$SchoolID_notbox}>
+	</td>
+	<td>
+		{$searchtype_SchoolID}
+	</td>
+	<td>
+		{$SchoolID_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$SchoolID_editcontrol1}&nbsp;
+	</td>
+{END SchoolID_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Search</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Reset</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_search}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>
